@@ -32,7 +32,7 @@
                     <td><%=it.getName()%></td>
                     <td><%=it.getPrice()%></td>
                     <td><%=it.getAmount()%></td>
-                    <td><button class="btn btn-success">Details</button></td>
+                    <td><a href="/details?id=<%=it.getId()%>" class="btn btn-success">Details</a></td>
                 </tr>
                 <% }
                 }

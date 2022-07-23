@@ -28,4 +28,14 @@ public class DBManager {
     public static void setId(Long id) {
         DBManager.id = id;
     }
+
+    public static Item getItem(Long id){
+        for(Item itm: items){
+            if(itm.getId()==id){
+                return itm;
+            }
+        }
+        return null;
+    }
+
 }
